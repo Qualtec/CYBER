@@ -135,7 +135,42 @@
         flex-direction: column;
         align-items: center;
       }
-    }
+      /* All links (default style) */
+a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Visited link */
+a:visited {
+  color: #4b0082; /* dark purple */
+}
+
+/* Hovered link */
+a:hover {
+  color: #ffffff;
+  background-color: #0066cc;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Active link (when clicked) */
+a:active {
+  color: #ff6600;
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+      
+    
+      
+      
+      }
   </style>
 </head>
 <body>
