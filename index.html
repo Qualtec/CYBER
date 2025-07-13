@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="refresh" content="2160"/>
-  <title>Qualtec Cyber - Kapsabet</title>
+  <title>QUALTEC LTD</title>
+  <title>CHEBARBAR KAPSABET</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
@@ -13,6 +14,7 @@
       padding: 0;
       background: #f8f8f8;
       color: #333;
+      width:auto;
     }
     header {
       background: #004080;
@@ -169,7 +171,7 @@ a:active {
 <body>
 
 <header>
-  <h1>Qualtec Cyber</h1>
+  <h1>QUALTEC LTD</h1>
   <p>Kapsabet's Leading Cyber Café and Technology Hub</p>
 </header>
 <hr/>
@@ -183,10 +185,6 @@ a:active {
   <a href="#about">About</a>
   <a href="#footer">Contact</a>
   <hr/>
-
-
-
-
 
    <nav>
     <ul>
@@ -529,43 +527,13 @@ a:active {
     <hr/>
     </section>
   
-<section id="contact" style="padding: 20px;">
-  <h2 style="text-align:center;">📨 Send Us a Message</h2>
-  <form id="message-form" style="max-width: 600px; margin: auto;" onsubmit="return sendMessage(event)">
-    <input type="text" name="Name" placeholder="Your Name" required style="width:100%; padding:10px; margin:10px 0;">
-    <input type="email" name="Email" placeholder="Your Email" required style="width:100%; padding:10px; margin:10px 0;">
-    <input type="text" name="Subject" placeholder="Subject" required style="width:100%; padding:10px; margin:10px 0;">
-    <textarea name="Message" placeholder="Your Message" rows="5" required style="width:100%; padding:10px; margin:10px 0;"></textarea>
-    <button type="submit" style="padding:10px 20px; background:#004080; color:white; border:none; cursor:pointer;">Send</button>
-    <p id="form-response" style="text-align:center; margin-top:10px;"></p>
-  </form>
-</section>
 
 
 <footer id="footer">
   <p>&copy; 2025 Qualtec Cyber. All Rights Reserved.</p>
-  <p>Designed by Qualtec Tech Team | Location: Kapsabet</p>
+  <p>Designed by Qualtec Tech Team | Location: Kapsabet Kenya</p>
 </footer>
 
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyLRci_dr_1YDNICcbxT5L84DUv08Pjwqj8PIqsFptrp7d1s7ucikQ5O2mrj5ef9xYC-w/exec; // Replace with your script ID
-  const form = document.getElementById('message-form');
-  const response = document.getElementById('form-response');
-
-  function sendMessage(event) {
-    event.preventDefault();
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(() => {
-        response.innerHTML = "✅ Message sent successfully!";
-        form.reset();
-      })
-      .catch(error => {
-        response.innerHTML = "❌ Error sending message.";
-        console.error('Error!', error.message);
-      });
-    return false;
-  }
-</script>
 
 
 </body>
